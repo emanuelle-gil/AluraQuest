@@ -16,11 +16,27 @@ void main() {
       ['Combate com Espada', 'Liderança', 'Resiliência'],
       'Espada Longa');
 
-  Mago daenerysTargaryen = Mago('Daenerys Targaryen', 'Targaryen', 'Maga', 23,
-      1.68, true, 90, 100, ['Domínio de Dragões', 'Liderança', 'Fogo']);
+  Mago daenerysTargaryen = Mago(
+    'Daenerys Targaryen', 
+    'Targaryen', 
+    'Maga', 
+    23,
+    1.68, 
+    true, 
+    90, 
+    100, 
+    ['Domínio de Dragões', 'Liderança', 'Fogo']);
 
-  Personagem aryaStark = Personagem('Arya Stark', 'Humano', 'Aventureira', 18,
-      1.50, false, 40, 60, ['Agilidade', 'Disfarce', 'Luta com Adaga']);
+  Personagem aryaStark = Personagem(
+    'Arya Stark', 
+    'Humano', 
+    'Aventureira', 
+    18,
+    1.50,
+    false, 
+    40, 
+    60, 
+    ['Agilidade', 'Disfarce', 'Luta com Adaga']);
 
   Personagem cerseiLannister = Personagem(
       'Cersei Lannister',
@@ -46,7 +62,9 @@ void main() {
   daenerysTargaryen.exibirFicha();
 
   jonSnow.atacar(cerseiLannister);
+
   daenerysTargaryen.atacar(aryaStark);
+  
   daenerysTargaryen.adicionarFeitico(Feiticos.fogo, 50);
   daenerysTargaryen.adicionarFeitico(Feiticos.gelo, 70);
   daenerysTargaryen.adicionarFeitico(Feiticos.cura, 100);
