@@ -1,0 +1,8 @@
+import 'package:alura_quest/alura_quest.dart';
+import 'package:test/test.dart';
+
+void main() {
+  test('calculate', () {
+    expect(calculate(), 42);
+  });
+}
